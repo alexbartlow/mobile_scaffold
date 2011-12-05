@@ -5,7 +5,7 @@ class Mobile < Sinatra::Base
   set :slim, :layout_engine => :erb, :layout => :layout
 
   get '/' do
-    erb :index
+    slim :index
   end
 
   get '/:path' do

@@ -1,6 +1,7 @@
 require 'rack'
 
 $: << File.expand_path('../lib', __FILE__)
+$: << File.expand_path('../', __FILE__)
 require 'mobile'
 require 'sprockets'
 

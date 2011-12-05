@@ -1,0 +1,2 @@
+- Dir[File.expand_path('../pages/**.slim', __FILE__)].each do |file|
+  == slim file.sub(/^.+pages/, 'pages').sub(/\..+$/,'').to_sym
